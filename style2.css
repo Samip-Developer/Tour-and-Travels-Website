@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(204, 196, 196, 0.862);
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0px 4vw;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(152, 161, 164, 0.266);
+    backdrop-filter: blur(7.4px);
+    width: 60vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    align-items: flex-end;
+    padding-right: 10vw;
+    padding-top: 4vw;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+}
+
+.navmenu a {
+    color: white;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 530;
+    transition: all 0.1s ease-in;
+}
+.line{
+    border-bottom: 2px solid black;
+}
+
+.navmenu a:hover{
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo-1 {
+    color: rgb(7, 108, 7);
+}
+
+.logo-2 {
+    color: black;
+}
+
+.logo-3 {
+    color: rgba(111, 73, 215, 0.962);
+}
+
+.p {
+    transform: translateX(0%);
+}
+
+.cta {
+    border: 2px solid black;
+    padding: 2px 7px;
+    border-radius: 20px;
+    color: black;
+}
+
+.cta:hover {
+    color: black;
+    background-color: rgb(244, 175, 71);
+    transition: all 0.9 ease-in-out;
+}
+
+
+.about{
+    min-height: 90vh;
+    width: 100%;
+    padding: 2vw 11vw;
+    
+    h1,h2{
+        margin-bottom: 4px;
+    }
+
+
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 3px;
+    }
+}
+
+
+
+
+@media (min-width: 790px) {
+    .navmenu {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        position: unset;
+        background-color: unset;
+        transform: translateX(0%);
+        gap: 5vw;
+        padding-top: 0;
+        padding-right: 5vw;
+        text-align: center;
+
+        a {
+            font-size: 1.2rem;
+        }
+
+    }
+    .hide-pc {
+        display: none;
+    }
+}
